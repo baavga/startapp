@@ -11,10 +11,7 @@
      
 </head>
 <body>
-    <div class="" id="app">
-            <navbar></navbar>
-            <router-view></router-view>
-    </div>    
+   
 </body>
 <footer>    
      
