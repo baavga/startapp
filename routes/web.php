@@ -12,17 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('home');
 });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
+Auth::routes(); 
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
 Route::get('/{name}',function(){
     return redirect('/');
 })->where('name','[A-Za-z]+');
